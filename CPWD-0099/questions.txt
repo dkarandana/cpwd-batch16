@@ -1,0 +1,10 @@
+1. php numerically index array begins with position.
+ 
+	c.0
+	
+2. which of the following are correct ways of creating an array?
+
+	$state[0] = "karnataka";
+	$state = array("karnataka");
+	
+	

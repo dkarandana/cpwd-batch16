@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<title>HTML_Form_Practical</title>
+		</head>
+				<body>
+				<h1>Registration form</h1>
+				<form method="post" action="response.php">
+								
+				<fieldset maxlength="50px">
+				<legend>Personal Data</legend>	
+					First Name		: <input type="text" name= "f_name"><br>
+					Last Name		: <input type="text" name= "L_name"><br>
+					Date Of Birth 	: <input type= "Date" name= "dob"><br>
+					Gender			: 	Male <input Type = "radio" name="gender" value="male" checked="checked"><br>
+										Female <input Type = "radio" name="gender" value="female"><br>
+																
+					<fieldset>
+					<legend>Contacts</legend>			
+						Street Line 1: <input type="text" name="address_line1"><br>		
+						Street Line 2: <input type="text" name="address_line2"><br>
+						City : <input type="text" name="city"><br>
+						Postal code	: <input type="text" name="postal_code"><br>
+						Country :<select name="country" value="country">
+							<option disabled="disabled" selected="selected"> -Select Country-</option>
+							<option value="SL"> Sri Lanka </option>
+							<option value="ind">India</option> 															
+						</select> <br>		
+						Email Adress: <input type="text" name="email"><br>	
+						Twitter: <input type="text" name="twitter" value="@"> <br>
+															
+						<fieldset>
+							<legend>Phone</legend>
+								Mobile: <input type="text" name="mobile"><br>
+								Fixed Line: <input type="text" name="phone"><br>
+									Fax: <input type="text" name="fax"><br>
+						</fieldset>
+						contact preferences : 
+							<input type="checkbox" name="cp" value="mobilep" checked="checked"> Mobile <br>
+							<input type="checkbox" name="cp" value="fixed phone"> Fixed Phone <br>
+							<input type="checkbox" name="cp" value="email"> Email <br>
+							<input type="checkbox" name="cp" value="twitter"> Twitter <br>
+					</fieldset>											
+																											
+					<fieldset>
+						<legend>CPWD Account</legend>
+						Student ID: <input type="text" name="cpwd_id" value="CPWD"><br>
+						batch : <select name="cpwd_batch">
+							<option disabled="disabled" selected="selected"> -Select branch-</option>
+							<option>batch 13</option> 
+							<option>batch 14</option>																										
+						</select><br>
+																														
+						<fieldset>
+						<legend>Wiki Account</legend>
+						User name: <input type="text" name="wiki_username"><br>
+						Password : <input type="password" name="wiki_password"><br>
+						Password (Re-type): <input type="password" name="wiki_password_retype"><br>
+						</fieldset>
+						
+						<input type="reset" name="reset" value="Clear"> 
+						<input type="submit" name="submit_data" value="Submit">
+					</fieldset>
+																						
+				</fieldset>											
+				</form>	
+								
+				</body>
+</html>

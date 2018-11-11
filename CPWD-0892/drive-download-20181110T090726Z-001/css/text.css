@@ -1,0 +1,85 @@
+body{
+  font-family: 'Raleway', sans-serif;
+ 
+  }
+
+a{
+	color:#4C4A4B;
+}
+a.hover{
+	color:#4596FF;
+}
+
+
+
+h1,h2,h3{
+	font-style: bold;
+	color:#4C4A4B; 
+	font-family: 'Crete Round', serif;
+}
+
+p{
+	 color:#000000;
+}
+
+/*p {
+    font-size: 12px;
+	footer{
+color:#ffffff;
+}
+
+footer{
+background: #4596FF; 
+	
+	
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+primary color: 
+https://color.adobe.com/sandy-stone-beach-ocean-diver-color-theme-15325
+H1
+#002F2F
+
+H2
+#004659
+
+anchor color
+#046380
+
+fonts
+01
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"> 
+
+font-family: 'Bitter', serif;
+
+02
+
+https://color.adobe.com/Eshan-Cpwd-web-color-theme-11038834/
+
+<link href="https://fonts.googleapis.com/css?family=Crete+Round|Lato|Raleway" rel="stylesheet"> 
+
+
+    font-family: 'Crete Round', serif;
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+
+background-color: #f8f8f8;
+
+*/
+
