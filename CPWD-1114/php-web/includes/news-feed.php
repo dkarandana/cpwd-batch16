@@ -1,67 +1,49 @@
-<?php 
- $newsFeed= [
- 	[
- 		"title"=>"News1", 
- 		"thumb"=>"thumb-1.jpg",
- 		"intro"=>"first news intro"
- 		"category"=>"sports"
- 		"url"=>"news-1-readmore.html"
- 	],
+<?php
+    $newsFeed = [
+        [
+            "title"=>"News 1",
+            "thumb"=>"thumb-1.jpeg",
+            "intro"=>"First News",
+            "category"=>"sports",
+            "url"=>"news-1-readmore.html"
+        ],
+        [
+            "title"=>"News 2",
+            "intro"=>"Second News",
+            "category"=>"auto",
+            "url"=>"news-2-readmore.html"
+        ],
+        [
+            "title"=>"News 3",
+            "intro"=>"Third News",
+            "category"=>"auto",
+            "url"=>"news-3-readmore.html"
+        ],
+        [
+            "title"=>"News 4",
+            "intro"=>"Fourth News",
+            "category"=>"auto",
+            "url"=>"news-4-readmore.html"
+        ]
+    ];
 
- 	[
- 		"title"=>"News2", 
- 		"intro"=>"first news intro"
- 		"category"=>"auto"
- 		"url"=>"news-2-readmore.html"
- 	],
+    $newsBlocks = "";
 
- 	[
- 		"title"=>"News3", 
- 		"intro"=>"first news intro"
- 		"category"=>"auto"
- 		"url"=>"news-2-readmore.html"
- 	],
- ];
+    foreach( $newsFeed as $news ){
 
- print_r($newsFeed);
- ?>
+        $newsBlocks = $newsBlocks . <<<EOD
+        <h4>{$news['title']}</h4>
+        <img src="{$news['thumb']}" alt="{$news['title']}"/>
+        <p class="intro">{$news['intro']}
+            <a class="read-more" href="{$news['url']}">more...</a>
+        </p>
+
+EOD;
+
+    }
+?>
 
 <h3>NEWS FEED</h3>
-				<ul id="news-feed" >
-					<li>
-						<img src="" alt="news 1">
-
-						<p>
-							News content
-							<a class="more">...more</a>
-						</p>
-					</li>
-
-					<li>
-						<img src="" alt="news 2">
-
-						<p>
-							News content
-							<a class="more">...more</a>
-						</p>
-					</li>
-
-					<li>
-						<img src="" alt="news 3">
-
-						<p>
-							News content
-							<a class="more">...more</a>
-						</p>
-					</li>
-
-					<li>
-						<img src="" alt="news 4">
-
-						<p>
-							News content
-							<a class="more">...more</a>
-						</p>
-					</li>
-					
-				</ul>
+<ul id="news-feed">
+    <?=$newsBlocks;?>
+</ul>
