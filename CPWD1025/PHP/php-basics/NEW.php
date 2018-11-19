@@ -28,4 +28,15 @@ EOD;
 	
 
 ?>
+<?php
+$courses = [
+	"CPWD"
+];
 
+$newArray = [];
+foreach ($courses ["WEB","AD"] as $module) {
+	array_push($newArray, "Module Name : " $module);
+
+}
+echo join("<br>",$newArray);
+?>
