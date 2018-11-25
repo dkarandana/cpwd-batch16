@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>news page</title>
+        <style>
+            h2{
+                font-size: 2em;
+            }
+
+            .feed{
+                width:350px;
+                min-height: 600px;
+                background:antiquewhite;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <section class="feed" >
+            <h2>News</h2>
+
+
+            <ul id="news-feed"></ul>
+
+        </section>
+        
+    </body>
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+
+
+
+    <script>
+    
+    
+    
+    $.ajax({
+        url:'http://192.168.100.7/batch16/dhananjaya/news-api/v1/get-news.php',
+        data:{
+            st:0,
+            lt:4
+        }
+    }).done(function( ajax ){ 
+
+
+
+var $newsFeed = $('#news-feed');
+
+
+
+
+        
+
+    console.log( ajax.data )
+
+
+
+    for( var i in ajax.data ){
+
+
+
+        var n = ajax.data[i];
+
+        var $li = $(`
+            <li> 
+                <h4>${n.title}</h4>
+
+                <img src="${n.thumbnail}"/>
+                
+            </li>
+        `);
+        
+        $newsFeed.append($li);
+
+
+    }
+
+    /*for( let n in d ){
+
+console.log(d[n][n] )
+/*
+
+
+
+    
+console.log( data[n] ); 
+                
+    }*/
+
+
+
+
+});
+    </script>
+</html>

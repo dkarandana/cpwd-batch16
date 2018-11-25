@@ -1,6 +1,5 @@
 <?php
-/*Slice out froman given array*/	
-    header('Content-Type: application/json');
+	header('Content-Type: application/json');
     require "./../data.php";
 
     $errors = [];
@@ -30,8 +29,5 @@
     }
 
     echo json_encode( $apiOut );
-
-
-    
 
 ?>
